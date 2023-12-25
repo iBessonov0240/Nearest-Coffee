@@ -8,7 +8,12 @@
 import UIKit
 
 class RegistrationInteractor: RegistrationInteractorInput {
+    
     weak var presenter: RegistrationInteractorOutput?
+
+    required init(presenter: RegistrationInteractorOutput) {
+        self.presenter = presenter
+    }
 
     func register(email: String, password: String, confirmPassword: String) {
         // Отправка запроса на сервер

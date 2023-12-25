@@ -7,11 +7,11 @@
 
 import UIKit
 
-class RegistrationView: UIViewController {
+class RegistrationView: UIViewController, RegistrationViewInput {
 
     // MARK: - Properties
 
-    var presenter: RegistrationPresenter!
+    var presenter: RegistrationPresenter?
 
     // MARK: - Outlets
 
@@ -106,7 +106,7 @@ class RegistrationView: UIViewController {
     }()
 
     private lazy var registerButton: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.backgroundColor = Theme.darkBrownColor
         button.clipsToBounds = true
         button.layer.cornerRadius = 24
@@ -123,18 +123,26 @@ class RegistrationView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        setupNavigationBar()
         setupHierarchy()
         setupLayout()
     }
 
     // MARK: - Setup
 
+    private func setupNavigationBar() {
+        title = "Регистрация"
+        navigationController?.navigationBar.backgroundColor = Theme.navigationColor
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: Theme.lightBrownColor]
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
+
     // Реализация методов RegistrationViewInput
-    private func showRegistrationSuccess(token: String) {
+    internal func showRegistrationSuccess(token: String) {
         // Обработка успешной регистрации
     }
 
-    private func showRegistrationFailure(error: String) {
+    internal func showRegistrationFailure(error: String) {
         // Обработка ошибки регистрации
     }
 
@@ -187,7 +195,9 @@ class RegistrationView: UIViewController {
               let confirmPassword = confirmPasswordTextField.text, !confirmPassword.isEmpty else {
             return
         }
-        print("Presenter: \(presenter)")
-        presenter.register(email: email, password: password, confirmPassword: confirmPassword)
+
+        presenter?.register(email: email, password: password, confirmPassword: confirmPassword)
+
+        presenter?.navigateToLoginTapped()
     }
 }

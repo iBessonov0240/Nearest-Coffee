@@ -13,4 +13,5 @@ struct Theme {
     static var syperLightBrownColor: UIColor = UIColor(hexString: "#AF9479")!
     static var whiteBrownColor: UIColor = UIColor(hexString: "#F6E5D1")!
     static var darkBrownColor: UIColor = UIColor(hexString: "#342D1A")!
+    static var navigationColor: UIColor = UIColor(hexString: "#C2C2C2")!
 }
