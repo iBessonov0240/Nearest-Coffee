@@ -23,6 +23,18 @@
 		FA575C4E2B36BF3300A1BEA4 /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C4D2B36BF3300A1BEA4 /* Registration.swift */; };
 		FA575C512B36C06900A1BEA4 /* RegistrationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C502B36C06900A1BEA4 /* RegistrationProtocols.swift */; };
 		FA575C542B36CF8300A1BEA4 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C532B36CF8300A1BEA4 /* Theme.swift */; };
+		FA575C5C2B382CAD00A1BEA4 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C5B2B382CAD00A1BEA4 /* LoginView.swift */; };
+		FA575C5E2B382CCF00A1BEA4 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C5D2B382CCF00A1BEA4 /* LoginPresenter.swift */; };
+		FA575C602B382CE200A1BEA4 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C5F2B382CE200A1BEA4 /* LoginInteractor.swift */; };
+		FA575C622B382CFE00A1BEA4 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C612B382CFE00A1BEA4 /* LoginRouter.swift */; };
+		FA575C652B382D1E00A1BEA4 /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C642B382D1E00A1BEA4 /* LoginProtocols.swift */; };
+		FA575C682B38794000A1BEA4 /* RegistrationModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C672B38794000A1BEA4 /* RegistrationModule.swift */; };
+		FA575C6B2B387E0C00A1BEA4 /* LoginModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C6A2B387E0C00A1BEA4 /* LoginModule.swift */; };
+		FA575C6E2B39364D00A1BEA4 /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C6D2B39364D00A1BEA4 /* LoginData.swift */; };
+		FA575C702B39366E00A1BEA4 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C6F2B39366E00A1BEA4 /* AuthResponse.swift */; };
+		FA575C722B3936AA00A1BEA4 /* LocationMenuResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C712B3936AA00A1BEA4 /* LocationMenuResponse.swift */; };
+		FA575C742B3936C800A1BEA4 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C732B3936C800A1BEA4 /* Point.swift */; };
+		FA575C762B3936FA00A1BEA4 /* LocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575C752B3936FA00A1BEA4 /* LocationResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +56,18 @@
 		FA575C4D2B36BF3300A1BEA4 /* Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
 		FA575C502B36C06900A1BEA4 /* RegistrationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationProtocols.swift; sourceTree = "<group>"; };
 		FA575C532B36CF8300A1BEA4 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		FA575C5B2B382CAD00A1BEA4 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FA575C5D2B382CCF00A1BEA4 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		FA575C5F2B382CE200A1BEA4 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		FA575C612B382CFE00A1BEA4 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		FA575C642B382D1E00A1BEA4 /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		FA575C672B38794000A1BEA4 /* RegistrationModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationModule.swift; sourceTree = "<group>"; };
+		FA575C6A2B387E0C00A1BEA4 /* LoginModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModule.swift; sourceTree = "<group>"; };
+		FA575C6D2B39364D00A1BEA4 /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		FA575C6F2B39366E00A1BEA4 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		FA575C712B3936AA00A1BEA4 /* LocationMenuResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationMenuResponse.swift; sourceTree = "<group>"; };
+		FA575C732B3936C800A1BEA4 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		FA575C752B3936FA00A1BEA4 /* LocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +102,7 @@
 			children = (
 				FA575C412B36ABE300A1BEA4 /* Utilities */,
 				FA575C3E2B36AB9F00A1BEA4 /* Managers */,
+				FA575C6C2B39360500A1BEA4 /* Model */,
 				FA575C382B36AAE600A1BEA4 /* Extensions */,
 				FA575C372B36AAC400A1BEA4 /* Resources */,
 				FA575C362B36AAA100A1BEA4 /* App */,
@@ -109,6 +134,7 @@
 		FA575C352B36AA7C00A1BEA4 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FA575C5A2B382C6E00A1BEA4 /* Login */,
 				FA575C422B36B85600A1BEA4 /* Registration */,
 			);
 			path = UI;
@@ -160,11 +186,9 @@
 		FA575C422B36B85600A1BEA4 /* Registration */ = {
 			isa = PBXGroup;
 			children = (
+				FA575C672B38794000A1BEA4 /* RegistrationModule.swift */,
 				FA575C4F2B36C04400A1BEA4 /* RegistrationProtocols */,
-				FA575C432B36BD7400A1BEA4 /* RegistrationView.swift */,
-				FA575C452B36BD9200A1BEA4 /* RegistrationPresenter.swift */,
-				FA575C472B36BDB500A1BEA4 /* RegistrationInteractor.swift */,
-				FA575C492B36BDC400A1BEA4 /* RegistrationRouter.swift */,
+				FA575C662B3878BB00A1BEA4 /* Implementations */,
 			);
 			path = Registration;
 			sourceTree = "<group>";
@@ -199,6 +223,58 @@
 				FA575C532B36CF8300A1BEA4 /* Theme.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		FA575C5A2B382C6E00A1BEA4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FA575C6A2B387E0C00A1BEA4 /* LoginModule.swift */,
+				FA575C632B382D0500A1BEA4 /* LoginProtocols */,
+				FA575C692B387DDC00A1BEA4 /* Implementations */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FA575C632B382D0500A1BEA4 /* LoginProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				FA575C642B382D1E00A1BEA4 /* LoginProtocols.swift */,
+			);
+			path = LoginProtocols;
+			sourceTree = "<group>";
+		};
+		FA575C662B3878BB00A1BEA4 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				FA575C432B36BD7400A1BEA4 /* RegistrationView.swift */,
+				FA575C452B36BD9200A1BEA4 /* RegistrationPresenter.swift */,
+				FA575C472B36BDB500A1BEA4 /* RegistrationInteractor.swift */,
+				FA575C492B36BDC400A1BEA4 /* RegistrationRouter.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		FA575C692B387DDC00A1BEA4 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				FA575C5B2B382CAD00A1BEA4 /* LoginView.swift */,
+				FA575C5D2B382CCF00A1BEA4 /* LoginPresenter.swift */,
+				FA575C5F2B382CE200A1BEA4 /* LoginInteractor.swift */,
+				FA575C612B382CFE00A1BEA4 /* LoginRouter.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		FA575C6C2B39360500A1BEA4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA575C6D2B39364D00A1BEA4 /* LoginData.swift */,
+				FA575C6F2B39366E00A1BEA4 /* AuthResponse.swift */,
+				FA575C712B3936AA00A1BEA4 /* LocationMenuResponse.swift */,
+				FA575C732B3936C800A1BEA4 /* Point.swift */,
+				FA575C752B3936FA00A1BEA4 /* LocationResponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,12 +350,24 @@
 			files = (
 				FA575C402B36ABBC00A1BEA4 /* NetworkManager.swift in Sources */,
 				FA575C4E2B36BF3300A1BEA4 /* Registration.swift in Sources */,
+				FA575C6E2B39364D00A1BEA4 /* LoginData.swift in Sources */,
 				FA575C462B36BD9200A1BEA4 /* RegistrationPresenter.swift in Sources */,
+				FA575C6B2B387E0C00A1BEA4 /* LoginModule.swift in Sources */,
 				FA575C242B36A8DD00A1BEA4 /* ViewController.swift in Sources */,
+				FA575C602B382CE200A1BEA4 /* LoginInteractor.swift in Sources */,
 				FA575C542B36CF8300A1BEA4 /* Theme.swift in Sources */,
+				FA575C742B3936C800A1BEA4 /* Point.swift in Sources */,
+				FA575C702B39366E00A1BEA4 /* AuthResponse.swift in Sources */,
+				FA575C622B382CFE00A1BEA4 /* LoginRouter.swift in Sources */,
 				FA575C482B36BDB500A1BEA4 /* RegistrationInteractor.swift in Sources */,
 				FA575C3D2B36AB6F00A1BEA4 /* UIColor+Extensions.swift in Sources */,
+				FA575C682B38794000A1BEA4 /* RegistrationModule.swift in Sources */,
+				FA575C722B3936AA00A1BEA4 /* LocationMenuResponse.swift in Sources */,
+				FA575C652B382D1E00A1BEA4 /* LoginProtocols.swift in Sources */,
+				FA575C762B3936FA00A1BEA4 /* LocationResponse.swift in Sources */,
 				FA575C512B36C06900A1BEA4 /* RegistrationProtocols.swift in Sources */,
+				FA575C5C2B382CAD00A1BEA4 /* LoginView.swift in Sources */,
+				FA575C5E2B382CCF00A1BEA4 /* LoginPresenter.swift in Sources */,
 				FA575C442B36BD7400A1BEA4 /* RegistrationView.swift in Sources */,
 				FA575C202B36A8DC00A1BEA4 /* AppDelegate.swift in Sources */,
 				FA575C3B2B36AB1200A1BEA4 /* UIView+Extensions.swift in Sources */,

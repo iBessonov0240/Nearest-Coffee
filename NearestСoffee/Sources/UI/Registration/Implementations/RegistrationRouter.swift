@@ -11,14 +11,17 @@ class RegistrationRouter: RegistrationRouterInput {
 
     weak var viewController: UIViewController?
 
+    required init(viewController: UIViewController) {
+        self.viewController = viewController
+    }
+
     func navigateToHome(token: String) {
         // Навигация к другому экрану
         // ...
     }
 
     func navigateToLogin() {
-        // Navigate to the login screen
-//        let loginViewController = LoginView() // Создайте экземпляр вашего LoginViewController
-//        viewController?.navigationController?.pushViewController(loginViewController, animated: true)
+        let loginViewController = LoginModule().makeModule()
+        viewController?.navigationController?.pushViewController(loginViewController, animated: true)
     }
 }

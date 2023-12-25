@@ -24,7 +24,12 @@ protocol RegistrationViewInput: AnyObject {
     func showRegistrationFailure(error: String)
 }
 
+protocol RegistrationViewOutput: AnyObject {
+    
+}
+
 // Протокол для взаимодействия между Presenter и Router
 protocol RegistrationRouterInput: AnyObject {
     func navigateToHome(token: String)
+    func navigateToLogin()
 }
