@@ -31,7 +31,7 @@ class RegistrationInteractor: RegistrationInteractorInput {
         do {
             request.httpBody = try JSONSerialization.data(withJSONObject: parameters)
         } catch {
-            presenter?.registrationFailure(error: error)
+            print(error.localizedDescription)
             return
         }
 
@@ -40,12 +40,11 @@ class RegistrationInteractor: RegistrationInteractorInput {
                 do {
                     let decoder = JSONDecoder()
                     let registrationResponse = try decoder.decode(Registration.self, from: data)
-                    self.presenter?.registrationSuccess(response: registrationResponse)
                 } catch {
-                    self.presenter?.registrationFailure(error: error)
+                    print(error.localizedDescription)
                 }
             } else if let error = error {
-                self.presenter?.registrationFailure(error: error)
+                print(error)
             }
         }.resume()
     }

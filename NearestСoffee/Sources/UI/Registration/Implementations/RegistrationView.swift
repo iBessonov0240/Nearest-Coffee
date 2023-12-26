@@ -122,7 +122,7 @@ class RegistrationView: UIViewController, RegistrationViewInput {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         setupNavigationBar()
         setupHierarchy()
         setupLayout()
@@ -135,15 +135,6 @@ class RegistrationView: UIViewController, RegistrationViewInput {
         navigationController?.navigationBar.backgroundColor = Theme.navigationColor
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: Theme.lightBrownColor]
         navigationController?.navigationBar.prefersLargeTitles = false
-    }
-
-    // Реализация методов RegistrationViewInput
-    internal func showRegistrationSuccess(token: String) {
-        // Обработка успешной регистрации
-    }
-
-    internal func showRegistrationFailure(error: String) {
-        // Обработка ошибки регистрации
     }
 
     private func setupHierarchy() {

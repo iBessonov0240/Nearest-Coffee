@@ -27,7 +27,7 @@ class NetworkManager {
         // ...
     }
 
-    func getMenuForLocation(locationID: Int, completion: @escaping (Result<[LocationMenuResponse], Error>) -> Void) {
+    func getMenuForLocation(locationID: Int, completion: @escaping (Result<[LocationResponse], Error>) -> Void) {
         // Реализация запроса на получение меню для конкретной локации
         // ...
     }

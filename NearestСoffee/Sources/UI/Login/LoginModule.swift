@@ -7,8 +7,6 @@
 
 import UIKit
 
-import UIKit
-
 final class LoginModule {
     func makeModule() -> UIViewController {
         let viewController = LoginView()

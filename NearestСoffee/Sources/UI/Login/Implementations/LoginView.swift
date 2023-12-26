@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginView: UIViewController {
+class LoginView: UIViewController, LoginViewInput {
 
     // MARK: - Properties
 
@@ -92,7 +92,7 @@ class LoginView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         setupNavigationBar()
         setupHierarchy()
         setupLayout()
@@ -143,6 +143,6 @@ class LoginView: UIViewController {
     // MARK: - Actions
 
     @objc func loginButtonPressed() {
-
+        presenter?.loginButtonPressed()
     }
 }

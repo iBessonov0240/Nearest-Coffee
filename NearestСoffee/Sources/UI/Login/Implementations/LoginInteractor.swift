@@ -7,11 +7,15 @@
 
 import UIKit
 
-class LoginInteractor {
+class LoginInteractor: LoginInteractorInput {
 
     weak var presenter: LoginPresenter?
 
     required init(presenter: LoginPresenter) {
         self.presenter = presenter
+    }
+
+    func performLogin() {
+        presenter?.loginSuccess()
     }
 }

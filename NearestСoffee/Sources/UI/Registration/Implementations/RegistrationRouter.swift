@@ -15,11 +15,6 @@ class RegistrationRouter: RegistrationRouterInput {
         self.viewController = viewController
     }
 
-    func navigateToHome(token: String) {
-        // Навигация к другому экрану
-        // ...
-    }
-
     func navigateToLogin() {
         let loginViewController = LoginModule().makeModule()
         viewController?.navigationController?.pushViewController(loginViewController, animated: true)

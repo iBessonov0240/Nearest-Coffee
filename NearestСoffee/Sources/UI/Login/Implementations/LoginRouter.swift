@@ -7,11 +7,16 @@
 
 import UIKit
 
-class LoginRouter {
-    
+class LoginRouter: LoginRouterInput {
+
     weak var viewController: UIViewController?
 
     required init(viewController: UIViewController) {
         self.viewController = viewController
+    }
+
+    func navigateToCoffeeShops() {
+        let coffeeShopsModule = CoffeeShopsModule.makeModule()
+        viewController?.navigationController?.pushViewController(coffeeShopsModule, animated: true)
     }
 }

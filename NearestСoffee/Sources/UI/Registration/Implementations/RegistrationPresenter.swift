@@ -21,15 +21,6 @@ class RegistrationPresenter: RegistrationInteractorOutput {
         interactor?.register(email: email, password: password, confirmPassword: confirmPassword)
     }
 
-    func registrationSuccess(response: Registration) {
-        view?.showRegistrationSuccess(token: response.token)
-        router?.navigateToHome(token: response.token)
-    }
-
-    func registrationFailure(error: Error) {
-        view?.showRegistrationFailure(error: error.localizedDescription)
-    }
-
     func navigateToLoginTapped() {
         router?.navigateToLogin()
     }

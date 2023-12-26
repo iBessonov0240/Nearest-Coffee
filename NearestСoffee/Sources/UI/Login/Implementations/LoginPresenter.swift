@@ -5,15 +5,23 @@
 //  Created by i0240 on 24.12.2023.
 //
 
-import UIKit
+import Foundation
 
-class LoginPresenter {
+class LoginPresenter: LoginInteractorOutput {
 
-    weak var view: LoginView?
-    var interactor: LoginInteractor?
-    var router: LoginRouter?
-    
-    required init(view: LoginView) {
+    weak var view: LoginViewInput?
+    var interactor: LoginInteractorInput?
+    var router: LoginRouterInput?
+
+    required init(view: LoginViewInput) {
         self.view = view
+    }
+
+    func loginButtonPressed() {
+        interactor?.performLogin()
+    }
+
+    func loginSuccess() {
+        router?.navigateToCoffeeShops()
     }
 }
