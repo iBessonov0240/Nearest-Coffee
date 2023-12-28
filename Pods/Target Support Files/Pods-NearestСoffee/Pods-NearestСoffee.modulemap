@@ -1,0 +1,6 @@
+framework module Pods_Nearest_offee {
+  umbrella header "Pods-NearestСoffee-umbrella.h"
+
+  export *
+  module * { export * }
+}

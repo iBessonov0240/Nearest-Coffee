@@ -29,4 +29,8 @@ class CoffeeShopsPresenter: CoffeeShopsInteractorOutput {
     func coffeeShopsFetchFailed(error: Error) {
         view?.showError(message: "Failed to fetch coffee shops")
     }
+
+    func mapButtonPressed() {
+        router?.navigateToMap()
+    }
 }

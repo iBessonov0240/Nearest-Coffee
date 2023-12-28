@@ -26,7 +26,7 @@ protocol CoffeeShopsViewInput: AnyObject {
 
 // Протокол для взаимодействия между Presenter и Router
 protocol CoffeeShopsRouterInput: AnyObject {
-
+    func navigateToMap()
 }
 
 // Протокол для взаимодействия между Presenter и ячейкой таблицы

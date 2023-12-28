@@ -14,4 +14,9 @@ class CoffeeShopsRouter: CoffeeShopsRouterInput {
     required init(viewController: UIViewController) {
         self.viewController = viewController
     }
+
+    func navigateToMap() {
+        let mapModule = MapModule.makeModule()
+        viewController?.navigationController?.pushViewController(mapModule, animated: true)
+    }
 }

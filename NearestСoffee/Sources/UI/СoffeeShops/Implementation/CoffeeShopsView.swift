@@ -93,7 +93,7 @@ class CoffeeShopsView: UIViewController, CoffeeShopsViewInput {
 
 
     @objc func mapButtonPressed() {
-
+        presenter?.mapButtonPressed()
     }
 }
 
